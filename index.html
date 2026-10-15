@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cielos Épicos - Bitácora</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f6f6f9;--card:#fff;--ink:#16161d;--mute:#5b5b6b;--line:#dcdce6;--acc:#5b3fd6;--accbg:#ece8ff;--ok:#1d7a46;--okbg:#e3f5ea;--bad:#b3261e;--badbg:#fde8e6;--warn:#8a5a00;--warnbg:#fff3d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d0d14;--card:#161622;--ink:#ecebf5;--mute:#9d9db3;--line:#2b2b3d;--acc:#a994ff;--accbg:#241f4a;--ok:#6fdc9c;--okbg:#14301f;--bad:#ff8a80;--badbg:#3a1815;--warn:#ffcf70;--warnbg:#3a2b0a}}
+:root[data-theme="dark"]{--bg:#0d0d14;--card:#161622;--ink:#ecebf5;--mute:#9d9db3;--line:#2b2b3d;--acc:#a994ff;--accbg:#241f4a;--ok:#6fdc9c;--okbg:#14301f;--bad:#ff8a80;--badbg:#3a1815;--warn:#ffcf70;--warnbg:#3a2b0a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:1.7rem;line-height:1.2;margin:.2em 0 .3em}
+h2{font-size:1.25rem;margin:2em 0 .6em;padding-bottom:.3em;border-bottom:2px solid var(--line)}
+h3{font-size:1.02rem;margin:0 0 .3em}
+p{margin:.4em 0}
+.sub{color:var(--mute);margin:0 0 1em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.tag{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:99px;margin-right:6px;vertical-align:middle}
+.t-ok{background:var(--okbg);color:var(--ok)}.t-bad{background:var(--badbg);color:var(--bad)}.t-warn{background:var(--warnbg);color:var(--warn)}.t-acc{background:var(--accbg);color:var(--acc)}
+.now{border-color:var(--acc);border-width:2px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:.92rem}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mute);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.03em}
+code{background:var(--accbg);color:var(--acc);padding:1px 5px;border-radius:5px;font-size:.88em}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:8px 0;padding:0 16px}
+summary{cursor:pointer;padding:12px 0;font-weight:600;list-style-position:outside}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p:last-child{margin-bottom:14px}
+ol,ul{padding-left:1.2em;margin:.4em 0}
+li{margin:.25em 0}
+.btn{display:inline-block;text-decoration:none;font:inherit;font-weight:600;background:var(--acc);color:var(--bg);border:0;border-radius:10px;padding:10px 16px;cursor:pointer}
+.btn[hidden]{display:none}
+.foot{margin-top:2.5em;color:var(--mute);font-size:.85rem}
+</style>
+</head>
+<body>
+<main>
+<h1>🕳️ Cielos Épicos - Bitácora</h1>
+<p class="sub">Todo sobre un pack de cielos para Minecraft Bedrock: versiones, errores, soluciones, preguntas y mejoras. Se actualiza cada vez que aparece una pregunta nueva sobre los cielos. Última actualización: 15 oct 2026.</p>
+
+<h2>Estado actual</h2>
+<div class="card now">
+<p><span class="tag t-acc">v14</span><b>Cielos_Epicos_v14.mcpack</b></p>
+<p><a class="btn" href="Cielos_Epicos_v14.mcpack" download>⬇️ Descargar el pack (v14)</a></p>
+<ul>
+<li><b>Cielos (subpacks):</b> Agujero Negro Blanco y Negro y Nebulosa Cósmica. Se eligen desde el engranaje del pack.</li>
+<li><b>Tamaño:</b> 6 caras de 1024 px por cielo, unos 8,4 MB en total.</li>
+<li><b>Ubicación del agujero:</b> girado unos 55° hacia un costado y unos 36° sobre el horizonte, para que el piso no lo tape.</li>
+<li><b>Corrección del pliegue:</b> el cielo viene pre-deformado para compensar el cubo corrido de Bedrock.</li>
+<li><b>Novedad de la v14:</b> suavicé los escalones de las zonas oscuras (banding) y les puse un grano fino.</li>
+<li><b>Identificación:</b> mismo ID (UUID) que la v13 y versión 1.0.14, así que debería reemplazarla.</li>
+</ul>
+<p><span class="tag t-warn">Ojo</span>La v13 se probó en el juego y funcionó. La v14 todavía no está probada en el juego.</p>
+</div>
+
+<h2>Cómo instalarlo</h2>
+<ol>
+<li>Abrí el <code>.mcpack</code> desde el celu y Minecraft lo importa solo.</li>
+<li>Si ves dos copias de "Cielos Épicos", borrá la vieja desde los packs instalados.</li>
+<li>Activalo en Ajustes → Recursos globales.</li>
+<li>Tocá el engranaje del pack y elegí el cielo (Minecraft arranca con uno por defecto).</li>
+</ol>
+
+<h2>Historial de versiones</h2>
+<div class="scroll"><table>
+<tr><th>Versión</th><th>Qué traía</th></tr>
+<tr><td>Pack 1</td><td>Agujero negro como sol y luna (<code>Cielos_AgujeroNegro</code>). Menos de 100 KB.</td></tr>
+<tr><td>5 packs</td><td>Eclipse Total, Gigante Roja, Galaxia y Saturno, Quasar y Nebulosa Cósmica, cada uno con sol y luna propios.</td></tr>
+<tr><td>Cielos_Epicos</td><td>Un solo pack con 8 subpacks. Usa cubemap (cielo completo), copiando cómo lo hace el pack de otra página.</td></tr>
+<tr><td>v2</td><td>Quedaron solo 3 cielos: Gargantua, Horizonte y Nebulosa.</td></tr>
+<tr><td>v3</td><td>Agujero negro renderizado por mí con física real. Agujero de un lado y espacio profundo del otro (estrellas, Vía Láctea, tres nebulosas y un planetita).</td></tr>
+<tr><td>v5</td><td>Nuevo agujero blanco y negro (disco de canto) y el de color mejorado. Luz doblada, anillo fino, resplandor y fondo sin costuras.</td></tr>
+<tr><td>v6</td><td>Agujero corrido al costado y subido. Disco con volumen de gas.</td></tr>
+<tr><td>v7</td><td>UUID nuevo, versión 1.0.7 y campo <code>memory_tier</code>. Más dos packs sueltos de respaldo.</td></tr>
+<tr><td>v8 y v9</td><td>Forma de una imagen de referencia (disco largo y fino, horizontal). La v8 la hice en color por error. La v9 lo rehizo sobre el blanco y negro.</td></tr>
+<tr><td>v10</td><td>Blanco y negro rehecho con volumen. Se eliminaron Horizonte y Color. Nebulosa rehecha como cielo real, sin espejos.</td></tr>
+<tr><td>v11</td><td>Sacada la nebulosa cercana al agujero (causaba un aro gris con borde). Forma clásica de agujero negro.</td></tr>
+<tr><td>v12</td><td>Remolino fuerte de cielo estirado. Quedó exagerado y se descartó.</td></tr>
+<tr><td>v13</td><td>Pre-deformación contra el pliegue. Vuelve el remolino suave de la v10. La primera que te funcionó.</td></tr>
+<tr><td><b>v14</b></td><td>Banding suavizado en las zonas oscuras de los dos cielos.</td></tr>
+</table></div>
+
+<h2>Errores y soluciones</h2>
+<details><summary><span class="tag t-bad">Error</span>La v6 no aparecía al importar</summary>
+<p><b>Causa:</b> las v2, v5 y v6 tenían el mismo UUID y la misma versión (1.0.0). Minecraft solo reemplaza un pack si la versión es mayor, así que ignoró el nuevo sin avisar.</p>
+<p><b>Solución:</b> UUID nuevo y versión más alta en la v7. Desde ahí cada versión sube el número y mantiene el UUID.</p></details>
+<details><summary><span class="tag t-bad">Error</span>Un "borde" gris alrededor del agujero (v10)</summary>
+<p><b>Causa:</b> no era el disco. Era la nebulosa de fondo, que el agujero estiraba y doblaba formando un aro gris con contorno marcado.</p>
+<p><b>Solución:</b> cerca del agujero quedaron solo estrellas, que el lente convierte en arcos finos. La nebulosa quedó en otras zonas del cielo (v11).</p></details>
+<details><summary><span class="tag t-bad">Error</span>El pliegue en V en el cielo (v11 y v12)</summary>
+<p><b>Causa:</b> Bedrock dibuja el cielo en un cubo que no está centrado en tu cabeza sino corrido hacia arriba (bug MCPE-183454 de Mojang). Las líneas rectas se quiebran donde cruzan las aristas del cubo. Con dos capturas del juego calculé un corrimiento de unas 0,4 veces la mitad del cubo y un campo de visión de unos 91°.</p>
+<p><b>Soluciones:</b> (1) pre-deformar el cielo al revés para que en el juego se vea derecho, que es la que apliqué; (2) poner el agujero en el centro de una cara del cubo, que ya no hace falta; (3) arreglar el motor, que no se puede desde un pack.</p>
+<p><span class="tag t-warn">Límite</span>El cálculo asume corrimiento fijo y las capturas eran a la misma altura (Y=-60). Si en otra altura el pliegue reaparece, mandá una captura y se recalibra.</p></details>
+<details><summary><span class="tag t-bad">Error</span>Cuadritos en el disco y anillo "dibujado"</summary>
+<p><b>Causa:</b> cuando un rayo de luz cruzaba varias capas del disco en un mismo paso, las sumaba en el orden equivocado.</p>
+<p><b>Solución:</b> corregí el orden de composición y el disco quedó turbulento y con volumen.</p></details>
+<details><summary><span class="tag t-bad">Error</span>Nubes de fondo simétricas, como espejo</summary>
+<p><b>Solución:</b> rehice el fondo con nubes sin costuras ni simetría de espejo, y la nebulosa como cielo real (v5 y v10).</p></details>
+<details><summary><span class="tag t-bad">Error</span>Remolino exagerado (v12)</summary>
+<p><b>Solución:</b> volví al remolino suave de la v10, que era el que te gustaba. La versión fuerte quedó fuera del pack.</p></details>
+<details><summary><span class="tag t-bad">Error</span>Escalones en los degradados oscuros (banding)</summary>
+<p><b>Causa:</b> en las zonas casi negras hay muy pocos niveles de gris disponibles (8 bits son 256 por color), y los degradados quedaban como curvas de nivel.</p>
+<p><b>Solución (v14):</b> reconstruí el degradado suave y le sumé un grano de ±1 nivel solo en zonas oscuras y planas. Estrellas, anillo y disco no se tocaron.</p></details>
+
+<h2>Preguntas y respuestas</h2>
+<details><summary>¿Se puede poner un video, GIF o foto animada en el cielo?</summary>
+<p>No. Bedrock solo anima texturas de bloques e ítems, no el cielo, y no acepta video. Lo único parecido es un add-on con una entidad gigante que simule el cielo animado, pero es pesado, se rompe fácil y no lo recomiendo en un celu de gama baja como el A04.</p></details>
+<details><summary>¿Se puede dar movimiento usando la mecánica del sol, la luna o las nubes?</summary>
+<p><b>Sol y luna:</b> si el agujero es la textura del sol, cruza el cielo con el día y la noche. Se mueve el astro completo, no el disco por dentro, y el fondo queda quieto. No estoy seguro de que el sol se dibuje encima de un cielo cubemap, habría que probarlo.</p>
+<p><b>Nubes:</b> la textura se desplaza sola con el viento, pero las nubes de Minecraft son bloques con relieve a altura fija, sin transparencias suaves. Servirían como polvo estelar muy lento, no como un disco de acreción.</p>
+<p><span class="tag t-warn">Pendiente</span>No lo armé porque se pidió solo la respuesta.</p></details>
+<details><summary>¿Se puede mejorar la calidad con más píxeles o más tonos de negro, blanco y gris?</summary>
+<p><b>Más píxeles:</b> 2048 px por cara se vería algo más nítido, pero en un A04 puede dar lag o cierres, y 1024 ya está cerca de lo que la pantalla puede mostrar.</p>
+<p><b>Más tonos:</b> Bedrock trabaja con 256 niveles por color, así que sumar grises no ayuda. Lo que sí mejora es el rango de brillo (anillo fuerte, disco con matices) y eliminar el banding, que ya hice en la v14.</p>
+<p><span class="tag t-warn">Pendiente</span>Puedo hacer una versión aparte de 2048 si querés comparar.</p></details>
+<details><summary>¿El agujero es horizontal o vertical?</summary>
+<p>Horizontal: el disco es una franja larga y fina que cruza de lado a lado, con el anillo de luz en el medio. Lo que se veía vertical era solo la pantalla del video de referencia.</p></details>
+<details><summary>¿Puede el agujero ser parte del 3D y cambiar al caminar?</summary>
+<p>No. El cielo es una imagen a distancia infinita: no cambia de perspectiva al caminar, el agujero queda siempre en el mismo lugar y no ilumina el mundo. La sensación de profundidad sale del polvo por delante, el anillo y la curvatura del disco.</p></details>
+<details><summary>¿Se puede buscar la imagen de Gargantua en 4K?</summary>
+<p>No. La red de Claude bloquea la descarga de imágenes, y además es un fotograma de Interstellar. Por eso se hizo un agujero propio calculado con física real, que no depende de ninguna foto y cubre el cielo entero.</p></details>
+
+<h2>Lo que Bedrock no permite</h2>
+<ul>
+<li>Animar el cielo (sin shaders o Vibrant Visuals, que en un celu así es difícil).</li>
+<li>Video o GIF como cielo.</li>
+<li>Que el agujero ilumine el mundo o cambie de perspectiva.</li>
+<li>Arreglar desde un pack el bug del cubo corrido (MCPE-183454).</li>
+</ul>
+
+<h2>Ideas y pendientes</h2>
+<ul>
+<li>Versión aparte a 2048 px para comparar nitidez frente a rendimiento.</li>
+<li>Volver a agregar el remolino fuerte (v12) como cielo opcional.</li>
+<li>Agujero en color parecido a una foto azul y naranja.</li>
+<li>Más cielos: tormenta, aurora, luna gigante cercana.</li>
+<li>Recalibrar el pliegue si reaparece a otra altura (mandame una captura).</li>
+<li>Armar el agujero como sol y luna que cruzan el cielo, más polvo en las nubes.</li>
+</ul>
+
+<h2>Preguntas y recomendaciones</h2>
+<p class="sub">¿Tenés una duda o una recomendación sobre estos cielos? Dejala en el formulario y se va sumando a la página.</p>
+<div class="card">
+<a class="btn" id="ask" href="#" target="_blank" rel="noopener" hidden>💬 Dejar una pregunta o recomendación</a>
+<p class="sub" id="askNote">El formulario todavía no está habilitado.</p>
+</div>
+
+<h2>Nuevas consultas</h2>
+<p class="sub">Acá se van sumando las próximas preguntas sobre los cielos.</p>
+<div class="card"><p>Todavía no hay consultas nuevas desde la v14.</p></div>
+
+<p class="foot">Nada de esto se probó dentro del juego salvo la v13. Los datos del pliegue salen de capturas del juego.</p>
+</main>
+<script>
+/* Pegá acá el link de tu Google Forms (o de tu Discord/grupo). Si lo dejás vacío, el botón queda oculto. */
+var FORM_URL = "";
+if (FORM_URL) {
+  var b = document.getElementById("ask");
+  b.href = FORM_URL; b.hidden = false;
+  document.getElementById("askNote").textContent = "Se abre en una pestaña nueva.";
+}
+</script>
+</body>
+</html>
